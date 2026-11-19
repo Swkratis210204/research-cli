@@ -1,0 +1,12 @@
+# compiled binaries
+research.exe
+research
+
+# test output folders
+papers/
+papers2/
+papers3/
+
+# Go workspace file
+go.work
+go.work.sum
