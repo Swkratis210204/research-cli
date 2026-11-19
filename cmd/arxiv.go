@@ -49,10 +49,12 @@ var arxivCmd = &cobra.Command{
 	research arxiv 1706.03762 2305.12345 --save ./papers --bibtex  save multiple papers with bibtex
 
 	Notes:
-	- all commands support multiple IDs separated by spaces
-	- version suffixes are stripped automatically (e.g. 1706.03762v2 -> 1706.03762)
-	- duplicate IDs in the same command are skipped
-	- existing files are never overwritten`,
+		- all commands support multiple IDs separated by spaces
+		- version suffixes are stripped automatically (e.g. 1706.03762v2 -> 1706.03762)
+		- duplicate IDs in the same command are skipped
+		- existing files are never overwritten
+
+	Docs & issues: https://github.com/Swkratis210204/research-cli`,
 	Args: cobra.MinimumNArgs(1), // at least one paper ID is required
 	Run: func(cmd *cobra.Command, args []string) {
 		// strip version suffix and validate each ID

@@ -1,6 +1,6 @@
 # research-cli
 
-> Version 1.0.3
+> Version 1.0.4
 
 A personal research assistant CLI built in Go. Fetch, cite, and save academic papers from arxiv without leaving the terminal.
 
@@ -101,3 +101,12 @@ The file contains title, authors, published date, URL, full abstract, and option
 ## Author
 
 Sokratis-Vissarion Giannoutsos — [github.com/Swkratis210204](https://github.com/Swkratis210204)
+
+## Contributing & Issues
+
+Found a bug or have a feature request? Open an issue on GitHub:
+https://github.com/Swkratis210204/research-cli/issues
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for details.
