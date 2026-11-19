@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/sokratis/research-cli/internal/arxiv"
+	"github.com/Swkratis210204/research-cli/internal/arxiv"
 )
 
 // threshold for abstract truncation in terminal

@@ -1,4 +1,4 @@
-module github.com/sokratis/research-cli
+module github.com/Swkratis210204/research-cli
 
 go 1.27.4
 

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/sokratis/research-cli/internal/arxiv"
-	"github.com/sokratis/research-cli/internal/output"
+	"github.com/Swkratis210204/research-cli/internal/arxiv"
+	"github.com/Swkratis210204/research-cli/internal/output"
 	"github.com/spf13/cobra"
 )
 
