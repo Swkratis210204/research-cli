@@ -39,14 +39,17 @@ var arxivCmd = &cobra.Command{
 	Long: `Fetch metadata and abstract for one or more arxiv papers by ID.
 
 	Examples:
-	research arxiv 1706.03762                          fetch and print paper
-	research arxiv 1706.03762 --fullab                 print full abstract
-	research arxiv 1706.03762 --bibtex                 print bibtex citation
-	research arxiv 1706.03762 --save ./papers          save as markdown
-	research arxiv 1706.03762 --save ./papers --bibtex save with bibtex included
-	research arxiv 1706.03762 2305.12345 --save ./papers  save multiple papers concurrently
+	research arxiv 1706.03762                                      fetch and print a single paper
+	research arxiv 1706.03762 --fullab                             print full abstract
+	research arxiv 1706.03762 --bibtex                             print bibtex citation
+	research arxiv 1706.03762 2305.12345                           fetch and print multiple papers
+	research arxiv 1706.03762 2305.12345 --bibtex                  print bibtex for multiple papers
+	research arxiv 1706.03762 --save ./papers                      save single paper as markdown
+	research arxiv 1706.03762 2305.12345 --save ./papers           save multiple papers concurrently
+	research arxiv 1706.03762 2305.12345 --save ./papers --bibtex  save multiple papers with bibtex
 
 	Notes:
+	- all commands support multiple IDs separated by spaces
 	- version suffixes are stripped automatically (e.g. 1706.03762v2 -> 1706.03762)
 	- duplicate IDs in the same command are skipped
 	- existing files are never overwritten`,
